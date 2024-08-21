@@ -4,12 +4,12 @@ import pandas as pd
 import json
 
 producer = KafkaProducer(
-    bootstrap_servers='mutual-shrimp-13505-us1-kafka.upstash.io:9092',
+    bootstrap_servers='vocal-hog-5938-us1-kafka.upstash.io:9092',
     sasl_mechanism='SCRAM-SHA-256',
     security_protocol='SASL_SSL',
-    sasl_plain_username='bXV0dWFsLXNocmltcC0xMzUwNSTolZoSwUXeZqoOfvlp4xj3pjl4uRXoCbeBmXI',
-    sasl_plain_password='YmY4ZWZjZmItNmE2Yi00Y2ZhLWI1N2ItNTgxMjU2ZGM1NjRm',
-    api_version_auto_timeout_ms=100000,    
+    sasl_plain_username='dm9jYWwtaG9nLTU5MzgkQW_khQF3X3_0WftGxYp_DwV5AsK3G7pOiVhnGpbtveg',
+    sasl_plain_password='NGFkOTk2YmMtYjNjNy00OTg5LTg3MzMtYjFmN2ExNzgxNjBk',
+    api_version_auto_timeout_ms=1000000,
 )
 
 tracks = pd.read_csv('atists.csv')
